@@ -2,13 +2,13 @@ package com.hw4.model.vo;
 
 public class Employee{
 
-	//鞘靛何
+	//頃勲摐攵�
 	private String name;
 	private int age;
 	private int salary;
 	private double taxRate;
 	
-	//积己磊何
+	//靸濎劚鞛愲秬
 	
 	public Employee() {
 		super();
@@ -20,7 +20,7 @@ public class Employee{
 		this.salary = salary;
 		this.taxRate = taxRate;
 	}
-	//皋家靛何
+	//氅旍唽霌滊秬
 	public String getName() {
 		return name;
 	}
@@ -51,11 +51,7 @@ public class Employee{
 				+ "]";
 	}
 	
-	//public String compareTo(Employee a) {
-		
-		//return this.name.compareTo(a.name); 葛福摆澜.
-		
-	//}
+
 	
 	
 }
