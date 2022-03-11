@@ -6,19 +6,21 @@ public class NumberOk {
 
 	private int ran;
 	
-    public NumberOk() {
+	//기본 생성자
+    public NumberOk() {  
     	
     }
+    
     //사용자에게 숫자를 입력 받고 입력 받은 숫자가 임의의 난수와 비교했을때
     //작은지, 큰지, 몇번 만에 맞추는지, 맞추면 계속 할지 끝낼지 묻는 메소드
 	public void numGame() {
 		
 		//난수 = 정답
-		int inputAnswer= (int)( (Math.random()*100)+1 );
-		
+		int inputAnswer= (int)( (Math.random()*100)+1 );  //1부터 100사이의 정수 
 		Scanner sc = new Scanner(System.in);
+		
 		int num; //num은 사용자가 찍는 숫자의 변수 
-		int count=1; //count는 맞춘 횟수를 카운트하는 변수
+		int count = 1; //count는 맞춘 횟수를 카운트하는 변수
 		
 		while(true){	
 			System.out.print("1부터 100사이의 정수를 하나 입력하세요: ");		
@@ -36,19 +38,10 @@ public class NumberOk {
 		 }
 		 count++;
 		  
-			//sc.close();
+			
 			 
 		} 		
 		
-		System.out.println("계속 하시겠습니까?(y/n): ");
-		char answer =sc.nextLine().toUpperCase().charAt(0); //이부분에서 오류남. 왜? 나지?
-		if(answer=='Y') {
-	      System.out.println("계속합니다.");
-		}else if(answer=='N'){
-		System.out.println("게임을 종료합니다.");
-	    }else {
-		System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
-		}
 		
 	
 	
